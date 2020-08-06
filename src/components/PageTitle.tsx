@@ -54,7 +54,6 @@ const PageTitle = ({ title }) => {
         <meta name='twitter:domain' content='teachy.vercel.app/' />
         <meta name='twitter:title' content='Estude online' />
         <meta name='twitter:description' content='Sua plataforma de ensino à distância' />
-        {/* <meta property={'og:' + title} content={title} key={title} /> */}
 
         <title>{title}Teachy</title>
       </Head>
