@@ -1,0 +1,101 @@
+@import backgrounds
+@import typography
+
+/** landing styles **/
+.page-landing
+  align-items: center
+  background: $bg-purple-700
+  color: $text-white
+  display: flex
+  height: 100vh
+  justify-content: center
+  width: 100vw
+
+  .logo
+    height: 4rem
+  
+  p
+    font-size: calc($text-sm + 1vmin)
+    line-height: 2rem
+    margin: 0 0 1rem
+
+  .hero-image
+    width: 100%
+
+  .page-landing-content > .total-connections
+    align-self: center
+    display: flex
+    font-size: $text-base
+    justify-content: center
+
+    & img
+      margin-right: .5rem
+
+.btn-group
+  display: flex
+  justify-content: center
+  margin: 2rem 0
+
+  .btn-link
+    align-items: center
+    border-radius: .5rem
+    color: $text-white
+    display: flex
+    font: $font-bold $text-lg $font-sans
+    height: 3rem
+    justify-content: center
+    transition: background-color 0.2s
+    width: 8rem
+
+    & img
+      margin-right: .5rem
+      width: 1.5rem
+
+    &:first-child
+      margin-right: 1rem
+
+    &.study
+      background: $bg-purple-500
+
+      &:hover
+        background: $bg-purple-600
+
+    &.teach
+      background: $bg-green-500
+
+      &:hover
+        background: $bg-green-600
+
+@media ( min-width: 1024px )
+  .page-landing-content
+    display: grid
+    grid-template-rows: 350px 1fr
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-areas: 'element-a element-b element-b' 'element-c element-d element-d'
+    max-width: 1024px
+
+    .page-landing-brand
+      align-self: center
+      grid-area: element-a
+      text-align: initial
+
+      & p
+        font-size: $text-lg
+    
+    .hero-image
+      grid-area: element-b
+      justify-self: end
+    
+    .btn-group
+      grid-area: element-c
+      justify-content: flex-start
+
+      .btn-link
+        font-size: $text-lg
+        height: 4rem
+        width: 9rem
+    
+    .total-connections
+      font-size: $text-lg
+      grid-area: element-d
+      justify-self: end
