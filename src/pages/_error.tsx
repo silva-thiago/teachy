@@ -1,12 +1,16 @@
+import React from 'react'
+
 function Error({ statusCode }) {
   return (
-    <div>
-      <p>
-        {statusCode
-          ? `An error ${statusCode} occurred on server`
-          : 'An error occurred on client'}
-      </p>
-    </div>
+    <React.Fragment>
+      <div>
+        <p>
+          {statusCode
+            ? `An error ${statusCode} occurred on server`
+            : 'An error occurred on client'}
+        </p>
+      </div>
+    </React.Fragment>
   )
 }
 
