@@ -1,0 +1,86 @@
+/** app styles **/
+@font-face
+  font-family: $font-serif
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap')
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+html, body
+  height: 100vh
+
+body
+  background-color: $bg-gray-100
+  color: $bg-gray-900
+
+#root
+  align-items: center
+  display: flex
+  justify-content: center
+
+body, input, button, textarea
+  // @at-root font-size: 60%
+  font-family: $font-serif
+  font-feature-settings: 'liga' // Support for IE
+  font-size: calc(#{$text-sm} + 1vmin)
+  font-style: normal
+  font-weight: $font-normal
+  letter-spacing: normal
+  line-height: normal
+  text-rendering: optimizeLegibility // Support for Safari and Chrome
+  text-transform: none
+  %antialiased
+
+  @media (min-width: 640px)
+    font-size: calc(#{$text-sm} + 1vmin)
+
+a
+  color: inherit
+  text-decoration: none
+
+  /** &:hover
+    color: $text-gray-400 **/
+
+ol,
+ul
+  list-style: none
+
+.text-center
+  text-align: center
+
+.text-muted
+  color: $text-gray-500
+
+main
+  display: grid
+  place-items: center
+
+  .container
+    width: 90vw
+    max-width: 768px
+
+footer > .container
+  margin-top: auto
+  padding: 2rem 2rem
+
+@media ( min-width: 641px ) and (max-width: 768px)
+  .container
+    max-width: 768px
+
+@media ( min-width: 769px ) and (max-width: 1024px)
+  .container
+    max-width: 1024px
+
+@media ( min-width: 1025px ) and (max-width: 1280px)
+  .container
+    max-width: 1280px
+
+@media ( min-width: 1281px ) and (max-width: 1440px)
+  .container
+    max-width: 1440px
+
+@media ( min-width: 1441px ) and (max-width: 2560px)
+  .container
+    max-width: 2560px
