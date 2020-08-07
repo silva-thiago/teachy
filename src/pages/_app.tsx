@@ -1,7 +1,6 @@
 import React from 'react'
 
-import '../styles/App.sass'
-import '../styles/Landing.sass'
+import '../styles/Global.sass'
 
 const App = ({ Component, pageProps }) => {
   return <Component {...pageProps} />
