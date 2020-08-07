@@ -33,7 +33,7 @@ const PageTitle = ({ title }) => {
         <meta property='og:image:height' content='1080' />
         <meta property='og:image:alt' content='' />
         <meta property='og:description' content='Sua plataforma de ensino à distância' />
-        <meta property='og:site_name' content='Firegram' />
+        <meta property='og:site_name' content='Teachy' />
         <meta property='og:locale' content='pt_BR' />
         {/* Open Graph Markup: lp */}
         <meta property='lp:type' content='webapp' />
@@ -45,17 +45,17 @@ const PageTitle = ({ title }) => {
         <meta property='lp:image:height' content='1080' />
         <meta property='lp:image:alt' content='' />
         <meta property='lp:description' content='Sua plataforma de ensino à distância' />
-        <meta property='lp:site_name' content='Firegram' />
+        <meta property='lp:site_name' content='Teachy' />
         <meta property='lp:locale' content='pt_BR' />
         {/* Twitter Cards */}
         <meta name='twitter:card' content='summary' />
-        <meta name='twitter:creator' content='@firegram' />
-        <meta name='twitter:site' content='@firegram' />
+        <meta name='twitter:creator' content='@teachy' />
+        <meta name='twitter:site' content='@teachy' />
         <meta name='twitter:domain' content='teachy.vercel.app/' />
         <meta name='twitter:title' content='Estude online' />
         <meta name='twitter:description' content='Sua plataforma de ensino à distância' />
 
-        <title>{title}Teachy</title>
+        <title>Teachy{title}</title>
       </Head>
     </React.Fragment>
   )
