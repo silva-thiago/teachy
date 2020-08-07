@@ -1,0 +1,58 @@
+/** page header style **/
+header
+  background-color: $bg-purple-700
+
+  .content
+    display: flex
+    flex-direction: column
+
+    .navbar
+      align-items: center
+      display: flex
+      justify-content: space-between
+      margin: 0 auto
+      padding: 1.5rem 0
+      width: 90%
+
+      .navbar-brand > .logo
+        height: 1.5rem
+
+        &:hover
+          opacity: .8
+      
+        /** & a
+          height: 3rem
+          transition: opacity: .2s **/
+
+          /** &:hover
+            opacity: .5 **/
+
+    .display
+      margin: 2rem auto 2rem
+      position: relative
+      width: 90%
+
+      & strong
+        font: $font-bold calc(#{$text-2xl} + 1vmin) $font-sans
+        color: $text-white
+
+@media ( min-width: 1024px )
+  header
+    height: 265px
+
+    .content
+      align-items: flex-start
+      display: flex
+      flex: 1
+      flex-direction: column
+      justify-content: center
+      margin: 0 auto
+      max-width: 768px
+      padding-bottom: 3rem
+
+      .navbar
+        margin: 0
+        max-width: 768px
+
+      .display
+        margin: 2rem 0
