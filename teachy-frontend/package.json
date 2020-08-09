@@ -2,28 +2,32 @@
   "name": "teachy",
   "version": "0.1.0",
   "private": true,
-  "description": "Plataforma de ensino à distância",
+  "description": "Interface da plataforma de estudos",
   "keywords": [
     "plataforma de ensino, plataforma de estudos, ensino a distancia, estudo a distancia, plataforma ead, ead"
   ],
+  "main": "git@github.com:silva-thiago/teachy-frontend.git#readme",
+  "repository": "git@github.com:silva-thiago/teachy-frontend.git",
+  "bugs": "git@github.com:silva-thiago/teachy-frontend.git/issues",
   "license": "MIT",
-  "author": "thiagosilva <thiago.silva@imd.ufrn.br> (http://dev.thiagosilva.cc/)",
-  "main": "git@github.com:silva-thiago/teachy.git#readme",
+  "author": "Thiago Silva <thiago.silva@imd.ufrn.br> (http://dev.thiagosilva.cc/)",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
     "next": "^9.5.1",
-    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
+    "react-scripts": "3.4.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.2",
+    "@testing-library/react": "^10.4.8",
+    "@testing-library/user-event": "^12.1.0",
+    "@types/jest": "^26.0.9",
+    "@types/node": "^14.0.27",
+    "@types/react": "^16.9.44",
+    "@types/react-dom": "^16.9.8",
+    "node-sass": "^4.14.1",
     "sass": "^1.26.10",
-    "typescript": "~3.7.2"
+    "typescript": "^3.9.7"
   },
   "scripts": {
     "dev": "next",
@@ -44,7 +48,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "repository": "git@github.com:silva-thiago/teachy.git",
-  "bugs": "git@github.com:silva-thiago/teachy.git/issues"
+  }
 }
